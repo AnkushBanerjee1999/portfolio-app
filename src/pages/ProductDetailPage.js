@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useTheme } from '../ThemeContext';
-import { useSearch } from '../SearchContext';
 import { useCart } from '../CartContext';
 
 const ProductDetailPage = () => {
