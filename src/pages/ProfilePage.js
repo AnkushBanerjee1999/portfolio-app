@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTheme } from '../ThemeContext';
 import { useSearch } from '../SearchContext';
 import { useCart } from '../CartContext';
 
 const ProfilePage = () => {
   const { openSearch } = useSearch();
-  const navigate = useNavigate();
   const { theme, toggleTheme } = useTheme();
   const { totalItems } = useCart();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [localSearch, setLocalSearch] = useState('');
 
   return (
     <div className="bg-background dark:bg-black text-on-background dark:text-gray-100 font-body-md text-body-md antialiased min-h-screen flex flex-col transition-colors duration-300 animate-reveal">
@@ -65,11 +63,11 @@ const ProfilePage = () => {
           {/* Sidebar Menu */}
           <aside className="w-full md:w-64 flex-shrink-0 border-r border-surface-container-high dark:border-gray-800 md:pr-8">
             <nav className="space-y-4 font-body-md text-[16px]">
-              <a href="#" className="block font-medium text-primary dark:text-white">Profile Details</a>
-              <a href="#" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">Order History</a>
-              <a href="#" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">Saved Addresses</a>
-              <a href="#" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">Payment Methods</a>
-              <a href="#" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors mt-8">Sign Out</a>
+              <a href="/profile" className="block font-medium text-primary dark:text-white">Profile Details</a>
+              <a href="/profile" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">Order History</a>
+              <a href="/profile" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">Saved Addresses</a>
+              <a href="/profile" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors">Payment Methods</a>
+              <a href="/profile" className="block text-on-surface-variant dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors mt-8">Sign Out</a>
             </nav>
           </aside>
 

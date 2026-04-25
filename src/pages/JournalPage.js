@@ -1,16 +1,14 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useTheme } from '../ThemeContext';
 import { useSearch } from '../SearchContext';
 import { useCart } from '../CartContext';
 
 const JournalPage = () => {
   const { openSearch } = useSearch();
-  const navigate = useNavigate();
   const { theme, toggleTheme } = useTheme();
   const { totalItems } = useCart();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [localSearch, setLocalSearch] = useState('');
 
   return (
     <div className="bg-background dark:bg-black text-on-background dark:text-gray-100 font-body-md text-body-md antialiased min-h-screen flex flex-col transition-colors duration-300 animate-reveal">

@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTheme } from '../ThemeContext';
 import { useSearch } from '../SearchContext';
 import { useCart } from '../CartContext';
 
 const CheckoutConfirmationPage = () => {
-  const { openSearch } = useSearch();
   const { theme, toggleTheme } = useTheme();
   const { cartItems, clearCart, subtotal } = useCart();
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -54,7 +53,7 @@ const CheckoutConfirmationPage = () => {
           <div className="lg:col-span-7 xl:col-span-8 flex flex-col gap-[48px]">
             {/* Progress Indicator */}
             <nav aria-label="Progress">
-              <ol className="flex items-center space-x-2 md:space-x-4" role="list">
+              <ol className="flex items-center space-x-2 md:space-x-4" >
                 <li className="flex items-center">
                   <span className="font-label-sm text-[14px] uppercase tracking-widest text-primary dark:text-white border-b border-primary dark:border-white pb-1">Shipping</span>
                 </li>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
 import { useTheme } from '../ThemeContext';
 import { useSearch } from '../SearchContext';
 import { useCart } from '../CartContext';
@@ -8,12 +8,10 @@ const ProductListingPage = () => {
   const { openSearch } = useSearch();
   const { theme, toggleTheme } = useTheme();
   const { addItem, totalItems } = useCart();
-  const navigate = useNavigate();
   const [searchParams] = useSearchParams();
   const searchQuery = searchParams.get('search') || '';
   
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [localSearch, setLocalSearch] = useState('');
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('All Products');
   const [sortBy, setSortBy] = useState('Featured');

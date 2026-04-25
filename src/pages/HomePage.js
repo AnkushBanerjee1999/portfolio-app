@@ -10,7 +10,6 @@ const HomePage = () => {
   const { totalItems } = useCart();
   const navigate = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [localSearch, setLocalSearch] = useState('');
   const [email, setEmail] = useState('');
   const [scrollY, setScrollY] = useState(0);
   const [activeHotspot, setActiveHotspot] = useState(null);
@@ -90,7 +89,7 @@ const HomePage = () => {
           <div className="absolute inset-0 z-10 premium-gradient pointer-events-none opacity-50" />
           
           <img 
-            alt="Hero Banner Image" 
+            alt="Hero Banner" 
             className="absolute inset-0 w-full h-[120%] object-cover object-center transition-transform duration-300 ease-out cursor-pointer" 
             style={{ transform: `translateY(${scrollY * 0.2}px)` }}
             src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?q=80&w=2158&auto=format&fit=crop"

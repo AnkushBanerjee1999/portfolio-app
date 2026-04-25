@@ -5,7 +5,6 @@ import { useSearch } from '../SearchContext';
 import { useCart } from '../CartContext';
 
 const ShoppingCartPage = () => {
-  const { openSearch } = useSearch();
   const navigate = useNavigate();
   const { theme, toggleTheme } = useTheme();
   const { cartItems, removeItem, updateQuantity, subtotal, totalItems } = useCart();
