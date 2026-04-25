@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout - ESSENTIALS</title>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#f8f9fa",
+                      "surface-container": "#edeeef",
+                      "on-primary": "#ffffff",
+                      "on-secondary-fixed": "#002117",
+                      "surface-container-highest": "#e1e3e4",
+                      "primary-fixed": "#e2e2e2",
+                      "tertiary-fixed": "#e2e2e2",
+                      "primary-container": "#1b1b1b",
+                      "on-secondary": "#ffffff",
+                      "primary": "#000000",
+                      "inverse-on-surface": "#f0f1f2",
+                      "on-surface": "#191c1d",
+                      "inverse-surface": "#2e3132",
+                      "background": "#f8f9fa",
+                      "tertiary-container": "#1b1b1b",
+                      "tertiary": "#000000",
+                      "surface-variant": "#e1e3e4",
+                      "on-primary-container": "#848484",
+                      "on-background": "#191c1d",
+                      "on-tertiary-fixed-variant": "#474747",
+                      "on-error-container": "#93000a",
+                      "surface-bright": "#f8f9fa",
+                      "secondary-fixed": "#b0f0d6",
+                      "secondary": "#2b6954",
+                      "secondary-container": "#adedd3",
+                      "inverse-primary": "#c6c6c6",
+                      "outline-variant": "#cfc4c5",
+                      "surface-container-lowest": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#1b1b1b",
+                      "outline": "#7e7576",
+                      "surface-container-low": "#f3f4f5",
+                      "on-surface-variant": "#4c4546",
+                      "secondary-fixed-dim": "#95d3ba",
+                      "tertiary-fixed-dim": "#c6c6c6",
+                      "on-secondary-container": "#306d58",
+                      "error": "#ba1a1a",
+                      "on-tertiary-fixed": "#1b1b1b",
+                      "on-tertiary": "#ffffff",
+                      "surface-dim": "#d9dadb",
+                      "on-error": "#ffffff",
+                      "on-secondary-fixed-variant": "#0b513d",
+                      "on-primary-fixed-variant": "#474747",
+                      "surface-container-high": "#e7e8e9",
+                      "on-tertiary-container": "#848484",
+                      "primary-fixed-dim": "#c6c6c6",
+                      "surface-tint": "#5e5e5e"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "section-gap": "120px",
+                      "margin-desktop": "64px",
+                      "stack-md": "24px",
+                      "container-max": "1280px",
+                      "unit": "8px",
+                      "stack-lg": "48px",
+                      "stack-sm": "12px",
+                      "gutter": "32px",
+                      "margin-mobile": "20px"
+              },
+              "fontFamily": {
+                      "label-sm": ["Inter"],
+                      "display": ["Epilogue"],
+                      "h2": ["Epilogue"],
+                      "body-md": ["Inter"],
+                      "h3": ["Epilogue"],
+                      "h1": ["Epilogue"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "label-sm": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "500" }],
+                      "display": ["72px", { "lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700" }],
+                      "h2": ["32px", { "lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                      "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0em", "fontWeight": "400" }],
+                      "h3": ["24px", { "lineHeight": "1.4", "letterSpacing": "0em", "fontWeight": "600" }],
+                      "h1": ["48px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                      "body-lg": ["18px", { "lineHeight": "1.6", "letterSpacing": "-0.01em", "fontWeight": "400" }]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background dark:bg-neutral-950 dark:text-neutral-100 antialiased min-h-screen flex flex-col transition-colors duration-300">
+<!-- Simplified Transactional Header (Suppressed Nav) -->
+<header class="w-full bg-surface-container-lowest dark:bg-neutral-900 border-b border-surface-container-highest dark:border-neutral-800 sticky top-0 z-50 transition-colors duration-300">
+<div class="max-w-container-max mx-auto px-gutter h-20 flex justify-between items-center">
+<a class="flex items-center gap-2 text-primary dark:text-white hover:opacity-70 transition-opacity" href="#">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">Return to Cart</span>
+</a>
+<div class="font-display text-h3 tracking-[0.2em] font-bold text-primary dark:text-white">
+                ESSENTIALS
+            </div>
+<div class="flex items-center gap-4">
+<button aria-label="Toggle Dark Mode" class="text-on-surface-variant dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-colors flex items-center" id="theme-toggle">
+<span class="material-symbols-outlined text-[20px]" id="theme-icon">dark_mode</span>
+</button>
+<div class="flex items-center gap-2 text-on-surface-variant dark:text-neutral-400">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest hidden md:inline-block">Secure Checkout</span>
+</div>
+</div>
+</div>
+</header>
+<!-- Main Checkout Canvas -->
+<main class="flex-grow max-w-container-max mx-auto w-full px-margin-mobile md:px-gutter py-margin-desktop grid grid-cols-1 lg:grid-cols-12 gap-gutter lg:gap-16">
+<!-- Left Column: Checkout Flow -->
+<div class="lg:col-span-7 xl:col-span-8 flex flex-col gap-stack-lg">
+<!-- Progress Indicator -->
+<nav aria-label="Progress">
+<ol class="flex items-center space-x-2 md:space-x-4" role="list">
+<li class="flex items-center">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary dark:text-white border-b border-primary dark:border-white pb-1">Shipping</span>
+</li>
+<li class="flex items-center">
+<span class="material-symbols-outlined text-outline dark:text-neutral-500 text-[16px] mx-1 md:mx-2">chevron_right</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline dark:text-neutral-500">Payment</span>
+</li>
+<li class="flex items-center">
+<span class="material-symbols-outlined text-outline dark:text-neutral-500 text-[16px] mx-1 md:mx-2">chevron_right</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-outline dark:text-neutral-500">Review</span>
+</li>
+</ol>
+</nav>
+<!-- Step 1: Shipping Form -->
+<section class="flex flex-col gap-stack-md">
+<h1 class="font-h2 text-h2 text-primary dark:text-white">Contact Details</h1>
+<form class="flex flex-col gap-stack-md">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 mb-2" for="email">Email Address</label>
+<input class="w-full bg-transparent border-0 border-b border-surface-dim dark:border-neutral-700 focus:ring-0 focus:border-primary dark:focus:border-white py-3 px-0 font-body-md text-body-md text-primary dark:text-white transition-colors" id="email" name="email" placeholder="Enter your email" type="email"/>
+</div>
+<h2 class="font-h3 text-h3 text-primary dark:text-white mt-stack-md">Shipping Address</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-x-gutter gap-y-stack-md">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 mb-2" for="firstName">First Name</label>
+<input class="w-full bg-transparent border-0 border-b border-surface-dim dark:border-neutral-700 focus:ring-0 focus:border-primary dark:focus:border-white py-3 px-0 font-body-md text-body-md text-primary dark:text-white transition-colors" id="firstName" name="firstName" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 mb-2" for="lastName">Last Name</label>
+<input class="w-full bg-transparent border-0 border-b border-surface-dim dark:border-neutral-700 focus:ring-0 focus:border-primary dark:focus:border-white py-3 px-0 font-body-md text-body-md text-primary dark:text-white transition-colors" id="lastName" name="lastName" type="text"/>
+</div>
+<div class="flex flex-col md:col-span-2">
+<label class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 mb-2" for="address">Address</label>
+<input class="w-full bg-transparent border-0 border-b border-surface-dim dark:border-neutral-700 focus:ring-0 focus:border-primary dark:focus:border-white py-3 px-0 font-body-md text-body-md text-primary dark:text-white transition-colors" id="address" name="address" type="text"/>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 mb-2" for="city">City</label>
+<input class="w-full bg-transparent border-0 border-b border-surface-dim dark:border-neutral-700 focus:ring-0 focus:border-primary dark:focus:border-white py-3 px-0 font-body-md text-body-md text-primary dark:text-white transition-colors" id="city" name="city" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-x-gutter">
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 mb-2" for="state">State</label>
+<select class="w-full bg-transparent border-0 border-b border-surface-dim dark:border-neutral-700 focus:ring-0 focus:border-primary dark:focus:border-white py-3 px-0 font-body-md text-body-md text-primary dark:text-white transition-colors appearance-none" id="state" name="state">
+<option class="dark:bg-neutral-900" value="">Select</option>
+<option class="dark:bg-neutral-900" value="NY">NY</option>
+<option class="dark:bg-neutral-900" value="CA">CA</option>
+</select>
+</div>
+<div class="flex flex-col">
+<label class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 mb-2" for="zip">ZIP Code</label>
+<input class="w-full bg-transparent border-0 border-b border-surface-dim dark:border-neutral-700 focus:ring-0 focus:border-primary dark:focus:border-white py-3 px-0 font-body-md text-body-md text-primary dark:text-white transition-colors" id="zip" name="zip" type="text"/>
+</div>
+</div>
+</div>
+<div class="flex items-center mt-stack-sm">
+<input class="h-4 w-4 rounded border-surface-dim dark:border-neutral-700 text-primary dark:text-white focus:ring-primary dark:focus:ring-white focus:ring-offset-background dark:focus:ring-offset-neutral-950 bg-transparent dark:checked:bg-white dark:checked:border-white" id="save-info" type="checkbox"/>
+<label class="ml-3 font-body-md text-body-md text-on-surface-variant dark:text-neutral-400" for="save-info">Save this information for next time</label>
+</div>
+<div class="mt-stack-lg flex flex-col sm:flex-row justify-end items-center gap-stack-md">
+<button class="w-full sm:w-auto px-8 py-4 bg-primary dark:bg-white text-on-primary dark:text-neutral-950 rounded font-label-sm text-label-sm uppercase tracking-widest hover:opacity-80 transition-opacity duration-300" type="button">
+                            Continue to Payment
+                        </button>
+</div>
+</form>
+</section>
+</div>
+<!-- Right Column: Order Summary Sidebar -->
+<div class="lg:col-span-5 xl:col-span-4 mt-section-gap lg:mt-0">
+<div class="sticky top-32 bg-surface-container-lowest dark:bg-neutral-900 border border-surface-container-highest dark:border-neutral-800 rounded-lg p-stack-md flex flex-col gap-stack-md transition-colors duration-300">
+<h2 class="font-h3 text-h3 text-primary dark:text-white border-b border-surface-container-highest dark:border-neutral-800 pb-4">Order Summary</h2>
+<!-- Items List -->
+<div class="flex flex-col gap-stack-sm divide-y divide-surface-container-highest dark:divide-neutral-800">
+<!-- Item 1 -->
+<div class="flex items-start gap-4 py-4">
+<div class="w-20 h-24 bg-surface-container dark:bg-neutral-800 rounded overflow-hidden flex-shrink-0">
+<img alt="Classic white t-shirt on a minimalist hanger" class="w-full h-full object-cover" data-alt="Classic white minimal t-shirt folded neatly on a clean white surface with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5j2lKplAwSlpkEVa4zMeU7-j2G1rE8z7wZC5DT7wPpZ0c84CBGsjtlIpWKPWeZxyVBP7nWUgdHBga2kkEPZ8ajbOxM6ymJZNCAyJL1In4q47gSwpJEbdI97oOMbwro9ecbpT5eBpQ1XB2lYJDLyRy9QAMUuD_wbIB9LXRNWehqEee4oJGUTtEZunmh69I8cHvF0YMQc9XI3XvN4bRQKRtxELUTCzlSOtIbDYMzJTcTyJXTwyLOau93AEFsIq_5Plbl_32pCObkFKf"/>
+</div>
+<div class="flex-grow flex flex-col justify-between h-full">
+<div>
+<h3 class="font-label-sm text-label-sm text-primary dark:text-white uppercase tracking-widest">Essential Tee</h3>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-neutral-400 mt-1">Color: White</p>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-neutral-400">Size: Medium</p>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400">Qty: 1</span>
+<span class="font-body-md text-body-md text-primary dark:text-white">$45.00</span>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start gap-4 py-4">
+<div class="w-20 h-24 bg-surface-container dark:bg-neutral-800 rounded overflow-hidden flex-shrink-0">
+<img alt="Minimalist canvas tote bag" class="w-full h-full object-cover" data-alt="Heavyweight canvas tote bag in off-white resting against a smooth gray concrete wall with natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAj5tTa5qAFkitMN3nQUoT1EX-2Jk_CR55MDRZDod5Hckmt98LQRi8wqcu5_bPhfrOkMe6pAXu_v7jfMHPHfH7KlDEJkwZ54NKofvR8VyfYPdgAandse-H572aY7WwZD4LKHg7WYxDH79B1PH82ODHYsDRKWzHyUzzBncWhIZNaEFweAyqvDlqsfB8iAtVWLtEvjPeGbx17qOfmzM-2c3u5wn86H4-QWzhYo5p2MUJIjIiR3xJZgPVoYSNl-AWFPGmGy_ziUeXT_5ef"/>
+</div>
+<div class="flex-grow flex flex-col justify-between h-full">
+<div>
+<h3 class="font-label-sm text-label-sm text-primary dark:text-white uppercase tracking-widest">Canvas Tote</h3>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-neutral-400 mt-1">Color: Natural</p>
+</div>
+<div class="flex justify-between items-center mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400">Qty: 1</span>
+<span class="font-body-md text-body-md text-primary dark:text-white">$120.00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Totals -->
+<div class="flex flex-col gap-2 pt-4 border-t border-surface-container-highest dark:border-neutral-800">
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant dark:text-neutral-400">Subtotal</span>
+<span class="font-body-md text-body-md text-primary dark:text-white">$165.00</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant dark:text-neutral-400">Shipping</span>
+<span class="font-label-sm text-label-sm text-outline dark:text-neutral-500 uppercase tracking-widest">Calculated next step</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="font-body-md text-body-md text-on-surface-variant dark:text-neutral-400">Estimated Tax</span>
+<span class="font-body-md text-body-md text-primary dark:text-white">$13.20</span>
+</div>
+</div>
+<div class="flex justify-between items-center pt-4 border-t border-primary dark:border-white">
+<span class="font-h3 text-h3 text-primary dark:text-white">Total</span>
+<span class="font-h3 text-h3 text-primary dark:text-white">$178.20</span>
+</div>
+</div>
+</div>
+</main>
+<!-- Success Confirmation Section (Conceptually separate screen, shown here for output fulfillment) -->
+<section class="w-full bg-surface-container-low dark:bg-neutral-950 border-t border-surface-container-highest dark:border-neutral-800 mt-section-gap py-section-gap flex justify-center items-center px-margin-mobile transition-colors duration-300">
+<div class="max-w-2xl w-full flex flex-col items-center text-center gap-stack-lg bg-surface-container-lowest dark:bg-neutral-900 p-margin-desktop rounded-xl shadow-2xl shadow-primary/5 dark:shadow-black/50 border border-surface-container-highest dark:border-neutral-800 transition-colors duration-300">
+<div class="w-20 h-20 rounded-full bg-secondary-container dark:bg-secondary dark:text-white text-on-secondary-container flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-[40px]">check_circle</span>
+</div>
+<div class="flex flex-col gap-4">
+<h2 class="font-h1 text-h1 text-primary dark:text-white">Thank you for your order.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant dark:text-neutral-400 max-w-lg mx-auto">
+                    Your order has been placed successfully. We've sent a confirmation email with your receipt and tracking details.
+                </p>
+</div>
+<div class="w-full border-t border-b border-surface-container-highest dark:border-neutral-800 py-stack-md flex flex-col md:flex-row justify-center gap-stack-lg">
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline dark:text-neutral-500 uppercase tracking-widest">Order Number</span>
+<span class="font-h3 text-h3 text-primary dark:text-white">#ESS-84920</span>
+</div>
+<div class="hidden md:block w-px bg-surface-container-highest dark:bg-neutral-800"></div>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-outline dark:text-neutral-500 uppercase tracking-widest">Estimated Delivery</span>
+<span class="font-h3 text-h3 text-primary dark:text-white">Oct 24 - Oct 26</span>
+</div>
+</div>
+<button class="mt-4 px-10 py-4 border border-primary dark:border-white text-primary dark:text-white bg-transparent rounded font-label-sm text-label-sm uppercase tracking-widest hover:bg-primary dark:hover:bg-white hover:text-on-primary dark:hover:text-neutral-950 transition-colors duration-500 ease-in-out" type="button">
+                Continue Shopping
+            </button>
+</div>
+</section>
+<!-- Simplified Footer -->
+<footer class="w-full border-t border-surface-container-highest dark:border-neutral-800 py-stack-lg bg-surface-container-lowest dark:bg-neutral-950 mt-auto transition-colors duration-300">
+<div class="max-w-container-max mx-auto px-gutter flex flex-col md:flex-row justify-between items-center gap-stack-md">
+<span class="font-label-sm text-label-sm text-outline dark:text-neutral-500 uppercase tracking-widest">© 2024 ESSENTIALS.</span>
+<div class="flex gap-stack-md">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-neutral-400 hover:text-primary dark:hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+<script>
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+    const htmlElement = document.documentElement;
+
+    themeToggleBtn.addEventListener('click', () => {
+        htmlElement.classList.toggle('dark');
+        
+        if (htmlElement.classList.contains('dark')) {
+            themeIcon.textContent = 'light_mode';
+        } else {
+            themeIcon.textContent = 'dark_mode';
+        }
+    });
+</script>
+</body></html>
